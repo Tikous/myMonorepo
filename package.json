@@ -13,7 +13,10 @@
     "clean": "lerna clean",
     "bootstrap": "lerna bootstrap",
     "publish": "lerna publish",
-    "dev": "lerna run dev --parallel"
+    "dev": "lerna run dev --parallel",
+    "storybook": "pnpm --filter @mymonorepo/storybook-app storybook",
+    "build-storybook": "pnpm --filter @mymonorepo/storybook-app build-storybook",
+    "build-components": "pnpm --filter @mymonorepo/ui-components build"
   },
   "devDependencies": {
     "lerna": "^8.0.2",
