@@ -9,7 +9,7 @@ import {
   DialogFooter,
   DialogClose
 } from '@mymonorepo/ui-components';
-import { Button } from '@mymonorepo/ui-components';
+import { Button, Input, Select, Label } from '@mymonorepo/ui-components';
 
 const meta: Meta<typeof Dialog> = {
   title: 'UI Components/Dialog',
@@ -96,41 +96,30 @@ export const FormDialog: Story = {
           </DialogDescription>
         </DialogHeader>
         <div className="space-y-4 py-4">
-          <div>
-            <label htmlFor="name" className="text-sm font-medium">
-              姓名
-            </label>
-            <input
+          <div className="space-y-2">
+            <Label htmlFor="name">姓名</Label>
+            <Input
               id="name"
               type="text"
               placeholder="请输入姓名"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
-          <div>
-            <label htmlFor="email" className="text-sm font-medium">
-              邮箱
-            </label>
-            <input
+          <div className="space-y-2">
+            <Label htmlFor="email">邮箱</Label>
+            <Input
               id="email"
               type="email"
               placeholder="请输入邮箱地址"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
-          <div>
-            <label htmlFor="role" className="text-sm font-medium">
-              角色
-            </label>
-            <select
-              id="role"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            >
+          <div className="space-y-2">
+            <Label htmlFor="role">角色</Label>
+            <Select id="role">
               <option value="">请选择角色</option>
               <option value="admin">管理员</option>
               <option value="user">普通用户</option>
               <option value="guest">访客</option>
-            </select>
+            </Select>
           </div>
         </div>
         <DialogFooter>
