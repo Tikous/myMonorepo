@@ -1,3 +1,6 @@
+// 导入样式
+import './styles/globals.css';
+
 export { Button } from './components/Button';
 export { 
   Dialog, 
@@ -30,6 +33,4 @@ export { Input } from './components/Input';
 export { Select } from './components/Select';
 
 export type { ButtonProps } from './components/Button';
-export type { DialogProps } from './components/Dialog';
-export type { InputProps } from './components/Input';
-export type { SelectProps } from './components/Select'; 
+export type { InputProps } from './components/Input'; 
